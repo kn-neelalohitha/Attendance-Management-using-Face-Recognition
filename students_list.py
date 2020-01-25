@@ -35,7 +35,9 @@ class StudentsList:
         self.class_name = class_name
 
     def make_pkl_file(self):
-        """ Create a Pickle(.pkl) file"""
+        """ Creates a Pickle(.pkl) file containing the names and roll numbers
+            of all the students in the  physical class.
+        """
         pkl_file_path=Path(self.make_pkl_name())
         if pkl_file_path.exists():
             os.remove(pkl_file_path)
